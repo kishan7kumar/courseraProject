@@ -10,39 +10,32 @@ body{
 
 
 /*  css reset  */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 h1{
- text-align: center;
+   text-align: center;
 }
 
 .menu-section{
-    /* display   : block; */
     margin-top: 50px;
-    text-align: center;
-    /* background-color: darkorange; */
-
-      
+    clear: both; 
 }
 
 .menuCard{
-    background-color: burlywood;
-    margin-left     : 10px;
-    margin-right    : 10px;
-    /* display         : inline-block; */
-    border       : 1px solid #000;
-    border-radius: 8px;
-    width        : 30%;
-    float        : left;
-    
-    
+    width: 33.33%;
+    padding: 0px 10px 0px 10px;
+    float: left; 
 }
 
-
+.menuCardBody{
+    background-color: burlywood;
+    border       : 1px solid #000;
+    border-radius: 8px;   
+}
 
 .title{
     display: block;
@@ -64,6 +57,7 @@ h1{
 .menuCard:nth-child(1) .title span{
     background-color: rgb(4, 80, 196);
 }
+
 .menuCard:nth-child(2) .title span{
     background-color: rgb(196, 4, 100);
 
@@ -87,32 +81,22 @@ h1{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    body{
-        padding: 2rem;
-    }
-
-    .menu-section{
-        display   : block;
-        text-align: center;
-    }   
-
     .menuCard:nth-child(3){
-        display: block;
         float  : left;
         width  : 100%;
+        clear :  right;
         margin : 20px 0px 0px 0px;
     }
 
     .menuCard:nth-child(2){  
-        width : 48%;
-        float : right;
-        margin: 0 0 0 10px;
+        width : 50%;
+        float : left;
+        clear: right;
     }
 
     .menuCard:nth-child(1){
         float : left;
-        width : 48%;
-        margin: 0;
+        width : 50%;   
     }
 
 }
@@ -124,12 +108,10 @@ h1{
   @media only screen and (max-width: 767px){
     
     .menuCard{
-        display: block;
-        width  : 100%;
-        margin : 20px 0px 0px 0px;
+        float : left;
+        clear : right;
+        width : 100%;
+        margin: 20px 0px 0px 0px;
     }
 
-    body{
-        padding: 2rem;
-    }
   }
